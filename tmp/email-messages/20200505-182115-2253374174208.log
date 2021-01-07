@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IHRlc3Q=?=
+From: geekshop_test@mail.ru
+To: nikolaeff2007@mail.ru
+Date: Tue, 05 May 2020 15:21:15 -0000
+Message-ID: <158869207554.12020.7063950011296180596@DESKTOP-4UPMIJ1>
+
+Для подтверждения учетной записи test на портале     http://localhost:8000 перейдите по ссылке: 
+http://localhost:8000/auth/verify/nikolaeff2007@mail.ru/6bf044e732b218da74925a5d8171ed5384ac59ea/
+-------------------------------------------------------------------------------

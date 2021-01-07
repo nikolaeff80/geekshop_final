@@ -1,0 +1,38 @@
+{% extends 'basketapp/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+{{ block.super }}
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block js %}
+{{ block.super }}
+{% endblock %}
+
+{% block page_header %}
+{{ block.super }}
+{% endblock %}
+
+{% block page_content %}
+<div class="basket_list">
+  {% include 'basketapp/includes/inc_basket_list.html' %}
+</div>
+<button class="back_to_main_btn">
+  <a class="on_main" href="{% url 'main' %}">
+    На главную
+  </a>
+</button>
+<button class="new_order_btn">
+  <a class="create_order_btn" href="{% url 'ordersapp:order_create' %}">
+    Создать заказ
+  </a>
+</button>
+{% endblock %}
+
+{% block footer %}
+{{ block.super }}
+{% endblock %}

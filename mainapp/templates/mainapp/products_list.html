@@ -1,0 +1,56 @@
+{% extends 'mainapp/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+{{ block.super }}
+{% endblock %}
+
+{% block js %}
+{{ block.super }}
+{% endblock %}
+
+{% block page_content %}
+<div class="details">
+    <div class="product_links clearfix">
+        {% include 'includes/inc_menu.html' %}
+    </div>
+    <div class="products_deal">
+        <div class="category-products clearfix">
+            <div class="products_list">
+                <div class="title clearfix">
+                    <h2>Категория: "{{ category.name|title }}"</h2>
+                    <div class="paginator clearfix">
+                        {% if products.has_previous %}
+                        <a class="previous_a" href="{% url 'products:page' category.pk products.previous_page_number %}">
+                            < </a>
+                                {% endif %}
+                                <span class="current">
+                                    страница {{ products.number }} из
+                                    {{ products.paginator.num_pages }}
+                                </span>
+                                {% if products.has_next %}
+                                <a class="next_a" href="{% url 'products:page' category.pk products.next_page_number %}">
+                                    >
+                                </a>
+                                {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            {% for product in products %}
+            <div class="block">
+                <a href="{% url 'products:product' product.pk %}"><img class="product_img" src="/media/{{ product.image }}" alt="">
+                    <div class="text">
+                        <img class="icon_hover" src="{% static '/img/icon-hover.png' %}" alt="img">
+                        <h3>{{ product.category }}</h3>
+                        <h4>{{ product.name }}</h4>
+                        <p>{{ product.short_desc }}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+{% endblock %}

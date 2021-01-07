@@ -1,0 +1,67 @@
+{% extends 'mainapp/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+{{ block.super }}
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block js %}
+{{ block.super }}
+{% endblock %}
+
+{% block page_header %}
+{{ block.super }}
+{% endblock %}
+
+{% block page_content %}
+<div class="product_details">
+    <div class="product_links clearfix">
+        {% include 'includes/inc_menu.html' %}
+    </div>
+
+    <div class="details-products">
+        <div class="details-slider">
+            <div class="slider-product">
+                <img src="/media/{{ product.image }}"
+                     alt="{{ product.short_desc }}">
+            </div>
+            <div class="details_mini">
+                <div class="block">
+                    <a href="#">
+                        <img src="/media/{{ product.image }}" alt="вариант 1">
+                    </a>
+                </div>
+                <div class="block">
+                    <a href="#">
+                        <img src="/media/{{ product.image }}" alt="вариант 2">
+                    </a>
+                </div>
+                <div class="block">
+                    <a href="#">
+                        <img src="/media/{{ product.image }}" alt="вариант 3">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="description">
+            <h3 class="big-head">{{ product.name }}</h3>
+            <br><br>
+            <p class="price"> {{ product.price }} <span>руб</span></p>
+            <br><br>
+            <div class="description_text">
+                {{ product.description }}
+            </div>
+            <a href="{% url 'basket:add' product.pk %}" class="buy_btn" style="vertical-align:middle"><span>
+                Купить</span>
+            </a>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+

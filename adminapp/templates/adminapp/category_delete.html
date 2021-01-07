@@ -1,0 +1,27 @@
+{% extends 'adminapp/base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/admin_style.css' %}">
+<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}">
+{% endblock %}
+
+{% block content %}
+<div class="category_delete">
+    <br>
+    Уверены, что хотите удалить категорию 
+    <strong> {{ object.name }} </strong>
+    ?
+    <br>
+    <form action="{% url 'admins:category_delete' object.pk %}" method="post">
+        {% csrf_token %}
+        <input class="btn btn-danger" type="submit" value="удалить">
+    </form>
+    <br>
+    <button class="cancel_btn">
+        <a href="{% url 'admins:categories' %}">
+            Отмена
+        </a>
+    </button>
+</div>
+{% endblock %}

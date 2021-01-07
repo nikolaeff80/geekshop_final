@@ -1,0 +1,110 @@
+[
+  {
+    "category": "Series 12v",
+    "name": "METABO PowerMaxx BS 2х2,0 Ач",
+    "image": "product_images/270x270_product_1.jpg",
+    "short_desc": "Безударная> дрель-шуруповерт",
+    "description": "Напряжение питания\t10,8 В\nТип аккумуляторной батареи\tLi-Ion\nЕмкость аккумулятора\t2 А.ч\nМаксимальный крутящий момент\t34 Нм\nРежимы работы\tСверление",
+    "price": "5461",
+    "quantity": "3"
+  },
+  {
+    "category": "Series 12v",
+    "name": "DeWALT DCF 815 D2",
+    "image": "product_images/270x270_product_2.jpg",
+    "short_desc": "Ударная дрель-шуруповерт",
+    "description": "Напряжение питания\t10,8 В\nТип аккумуляторной батареи\tLi-Ion\nЕмкость аккумулятора\t2 А.ч\nМаксимальный крутящий момент\t107 Нм",
+    "price": "10267",
+    "quantity": "1"
+  },
+  {
+    "category": "Series 12v",
+    "name": "BOSCH GSR 12V-15 FC",
+    "image": "product_images/270x270_product_3.jpg",
+    "short_desc": "Безударная дрель-шуруповерт",
+    "description": "безударная дрель-шуруповерт\nпитание от Li-Ion аккумулятора 2 А·ч, 12 В\nмаксимальный крутящий момент 30 Н·м\nколичество скоростей работы: 2\nлампа точечной подсветки\nэлектронная регулировка частоты вращения, блокировка кнопки включения\nдва аккумулятора, кейс, зарядное устройство в комплекте\nвес 0.8 кг",
+    "price": "15000",
+    "quantity": "9"
+  },
+  {
+    "category": "Series 12v",
+    "name": "BOSCH GSB 1080-2-LI /120-L",
+    "image": "product_images/270x270_product_4.jpg",
+    "short_desc": "Ударная дрель-шуруповерт",
+    "description": "Напряжение питания\t10,8 В\nТип аккумуляторной батареи\tLi-Ion\nЕмкость аккумулятора\t1,5 А.ч\nМаксимальный крутящий момент\t28 Нм",
+    "price": "6222",
+    "quantity": "4"
+  },
+  {
+    "category": "Series 18v",
+    "name": "METABO BS 18 LTХ Impuls 1x3.5 Ач",
+    "image": "product_images/270x270_product_5.jpg",
+    "short_desc": "Безударная дрель-шуруповерт",
+    "description": "Напряжение питания\t18 В\nТип аккумуляторной батареи\tLi-Ion\nЕмкость аккумулятора\t3,5 А.ч\nМаксимальный крутящий момент\t110 Нм",
+    "price": "14561",
+    "quantity": "2"
+  },
+  {
+    "category": "Series 18v",
+    "name": "BOSCH GSR 180-LI",
+    "image": "product_images/270x270_product_6.jpg",
+    "short_desc": "Безударная дрель-шуруповерт",
+    "description": "Напряжение питания\t18 В\nТип аккумуляторной батареи\tLi-Ion\nЕмкость аккумулятора\t1,5 А.ч\nМаксимальный крутящий момент\t54 Нм",
+    "price": "8954",
+    "quantity": "3"
+  },
+  {
+    "category": "Series 18v",
+    "name": "DeWALT DCD 771 D2",
+    "image": "product_images/270x270_product_7.jpg",
+    "short_desc": "Безударная дрель-шуруповерт",
+    "description": "Напряжение питания\t18 В\nТип аккумуляторной батареи\tLi-Ion\nЕмкость аккумулятора\t2 А.ч\nМаксимальный крутящий момент\t42 Нм",
+    "price": "9998",
+    "quantity": "6"
+  },
+  {
+    "category": "Series 18v",
+    "name": "HITACHI DS 18 DBL2",
+    "image": "product_images/270x270_product_8.jpg",
+    "short_desc": "Бесщеточная дрель-шуруповерт",
+    "description": "Напряжение питания\t18 В\nТип аккумуляторной батареи\tLi-Ion\nЕмкость аккумулятора\t5 А.ч\nМаксимальный крутящий момент\t136 Нм",
+    "price": "22900",
+    "quantity": "1"
+  },
+  {
+    "category": "Series 24-36v",
+    "name": "Bosch GSB 36 VE-2-LI",
+    "image": "product_images/270x270_product_9.jpg",
+    "short_desc": "Ударная дрель-шуруповерт",
+    "description": "Напряжение аккумулятора: 36 В;\nТип двигателя: щеточный;\nТип патрона: быстрозажимной;\nМакс. крутящий момент: 100 Нм.",
+    "price": "52021",
+    "quantity": "2"
+  },
+  {
+    "category": "Series 24-36v",
+    "name": "Bosch GSR 36 VE-2-LI",
+    "image": "product_images/270x270_product_10.jpg",
+    "short_desc": "Безударная дрель-шуруповерт",
+    "description": "Напряжение аккумулятора: 36 В;\nТип двигателя: щеточный;\nТип патрона: быстрозажимной;\nМакс. крутящий момент: 100 Нм.",
+    "price": "45483",
+    "quantity": "2"
+  },
+  {
+    "category": "Series 24-36v",
+    "name": "BOSCH GSR 36 V-LI 2.6Ah x2",
+    "image": "product_images/270x270_product_11.jpg",
+    "short_desc": "Безударная дрель шуруповерт",
+    "description": "безударная дрель-шуруповерт\nпитание от Li-Ion аккумулятора 2.60 А·ч, 36 В\nмаксимальный крутящий момент 80 Н·м\nколичество скоростей работы: 2",
+    "price": "39155",
+    "quantity": "1"
+  },
+  {
+    "category": "Series 24-36v",
+    "name": "GREENWORKS G24DD без АКБ и ЗУ",
+    "image": "product_images/270x270_product_12.jpg",
+    "short_desc": "Безударная дрель-шуруповерт",
+    "description": "Напряжение питания\t24 В\nТип аккумуляторной батареи\tLi-Ion\nМаксимальный крутящий момент\t56 Нм\nРежимы работы\tСверление",
+    "price": "4490",
+    "quantity": "5"
+  }
+]

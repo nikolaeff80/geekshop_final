@@ -1,0 +1,64 @@
+{% extends 'mainapp/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+{{ block.super }}
+{% endblock %}
+
+{% block css %}
+{{ block.super }}
+{% endblock %}
+
+{% block js %}
+{{ block.super }}
+{% endblock %}
+
+{% block page_header %}
+{{ block.super }}
+{% endblock %}
+
+{% block page_content %}
+<div class="products_main">
+    <div class="product_links clearfix">
+        {% include 'includes/inc_menu.html' %}
+    </div>
+    <div class="details-products">
+        <div class="details-slider">
+            <div class="slider-product">
+                <img src="/media/{{ hot_product.image }}">
+            </div>
+            <div class="details_mini">
+                <div class="block">
+                    <a href="#"><img src="/media/{{ hot_product.image }}" alt=""></a>
+                </div>
+                <div class="block">
+                    <a href="#"><img src="/media/{{ hot_product.image }}" alt=""></a>
+                </div>
+                <div class="block">
+                    <a href="#"><img src="/media/{{ hot_product.image }}" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="description">
+            <h3 class="big-bold">{{ hot_product.name }}</h3>
+            <br><br>
+            <h3 class="red">Горячее предложение</h3>
+            <br>
+            <p class="price">{{ hot_product.price }} <span>руб</span></p>
+            <br>
+            <div class="description_text">
+                {{ hot_product.description }}
+            </div>
+            <br>
+            <a class="hot_deal_button" href="{% url 'basket:add' hot_product.pk %}" >
+                <span>Купить</span> </a>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{{ block.super }}
+{% endblock %}

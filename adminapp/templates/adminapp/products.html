@@ -1,0 +1,56 @@
+{% extends 'adminapp/base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/admin_style.css' %}">
+<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}">
+{% endblock %}
+
+{% block content %}
+<div class="admin_products_list">
+    <button class="admin_new_product">
+        <a href={% url 'admins:product_create' category.pk %}>
+            Новый продукт
+        </a>
+    </button>
+
+    {% for object in objects %}
+    <div class="product_record">
+        <br>
+        <table class="admin_table">
+            <tr>
+                <th class="prod_img"><img src="/media/{{object.image|default:'products_images/default.jpg'}}" alt="{{ object.name }}"></th>
+                <th><div class="product_name">{{ object.name|title }}</div></th>
+                <th><div class="summary">
+                    <b>цена</b>
+                    <p>{{ object.price }} руб</p>
+                    <b>количество</b>
+                    <p>{{ object.quantity }}</p>
+                </div></th>
+                <th><div class="product_desc">
+                    {{ object.short_desc|title }}
+                </div></th>
+                <th><button>
+                    <a href={% url 'admins:product_read' object.pk %}>
+                        Подробнее
+                    </a>
+                </button></th>
+                <th><button>
+                    <a href={% url 'admins:product_update' object.pk %}>
+                        Редактировать
+                    </a>
+                </button></th>
+                <th><button>
+                    <a href={% url 'admins:product_delete' object.pk %}>
+                        Удалить
+                    </a>
+                </button></th>
+            </tr>
+        </table>
+        <br>
+    </div>
+    {% endfor%}
+</div>
+{% endblock %}
+
+

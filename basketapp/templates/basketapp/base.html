@@ -1,0 +1,107 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        {% block title%}
+        HoT - {{ title|title }}
+        {% endblock %}
+    </title>
+    {% block css %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static '/css/main_style.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}">
+    {% endblock %}
+    {% block js %}
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/basket_scripts.js' %}"></script>
+    {% endblock %}
+</head>
+
+<body>
+    <div class="container">
+        {% block page_header %}
+        <div class="header clearfix">
+            <a href="{% url 'main' %}" class="header_logo"></a>
+            <h1>Heap of Tools</h1>
+            <p>Pour homme...</p>
+        </div>
+        {% include 'includes/inc_navbar.html' %}
+        {% endblock %}
+        {% block page_content %}
+        {% endblock %}
+        <div class="clr"></div>
+    </div>
+
+    {% block footer %}
+    <div class="footer">
+        <div class="contact_us">
+            <div class="contact_us_head">CONTACT US</div>
+            <p class="contact_adress">132A Bridge Road Richmond VIC Australia.<br><br> Talk to us on 1300 132 <a
+                    class="contact_mail" href="#">info@heapoftools.com</a></p>
+        </div>
+        <div class="useful_inf">
+            <div class="useful_inf_head">USEFUL INFORMATION</div>
+            <div class="useful_links">
+                <div class="left">
+                    <li><a href="#">Sales terms</a></li>
+                    <li><a href="#">Customer care</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </div>
+                <ul class="right">
+                    <li><a href="#">Architect accounts</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Exchanges and returns</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Lets_Stay">
+            <div class="Lets_Stay_head">LET'S STAY IN TOUCH!</div>
+            <p class="lets_content">Suscribe to know about our latest news, products special offers just for suscribers.
+            </p>
+            <form class="subscribe_email clearfix" action="">
+                <input type="text" class="text" name="email" placeholder="   Your email address" size="35"
+                    style="height: 41px;">
+                <svg class="ico_send" display="none">
+                    <symbol id="icon_telegram" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z" />
+                    </symbol>
+                </svg>
+                <div class="social telegram">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="#icon_telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </form>
+        </div>
+        <div class="footer_bottom">
+            <div class="left">© Heap of Tools 2020. All Rights Reserved.</div>
+            <ul class="center">
+                <li class="footer_soc_link">
+                    <a href="#"><img src="{% static '/img/f.png'%}" alt="fb"></a>
+                </li>
+                <li class="footer_soc_link">
+                    <a href="#"><img src="{% static '/img/vk.png' %}" alt="vk"></a>
+                </li>
+                <li class="footer_soc_link">
+                    <a href="#"><img src="{% static '/img/pinterest.png' %}" alt="pinterest"></a>
+                </li>
+                <li class="footer_soc_link">
+                    <a href="#"><img src="{% static '/img/twitter.png' %}" alt="twitter"></a>
+                </li>
+            </ul>
+            <div class="right">Terms & Conditions / Privacy policy & Cookies</div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+
+</html>

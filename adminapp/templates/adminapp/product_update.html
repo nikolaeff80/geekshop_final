@@ -1,0 +1,22 @@
+{% extends 'adminapp/base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/admin_style.css' %}">
+<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="new_category_form">
+        <form class="form-horizontal" method="POST"  enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ update_form.as_p }}
+            <input class="form-control" type="submit" value="сохранить">
+        </form>
+        <button class="back_btn">
+            <a href="{% url 'admins:products' category.pk %}">
+                к списку продуктов
+            </a>
+        </button>
+    </div>
+{% endblock %}

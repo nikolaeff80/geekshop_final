@@ -1,0 +1,257 @@
+/* Register, login, edit */
+
+.h2_text_center_head {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #464646;
+}
+
+.admin_table {
+    margin: 0 auto;
+}
+
+.prod_img {
+    width: 270px;
+    height: 270px;
+}
+
+.admin_products_list {
+    padding-left: 98px;
+    padding-right: 98px;
+    width:1366px;  
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 16px; 
+    margin-bottom: 10px;  
+    font-family: sans-serif, Arial; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    align-content: center;
+}
+
+.login {
+    text-align: center;
+}
+
+.login,
+.category_delete,
+.product_delete,
+.product_read,
+.products_list {
+    background:#CCC; 
+    width:500px;  
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 16px; 
+    margin-bottom: 10px;  
+    font-family: sans-serif, Arial; 
+    color: #4b4b4b; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.users_list {
+    background:#CCC; 
+    width:500px;  
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 16px; 
+    margin-bottom: 10px;  
+    font-family: sans-serif, Arial; 
+    color: #4b4b4b; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.user_delete {
+    background:#CCC; 
+    width:500px;  
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 16px; 
+    margin-bottom: 10px;  
+    font-family: sans-serif, Arial; 
+    color: #4b4b4b; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.user_record {
+    line-height: 20px;
+    padding: 25px;
+}
+
+.new_user a,
+.user_role a{
+    text-decoration: none;
+}
+
+.categories_list {
+    background:#CCC; 
+    width:500px;  
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 16px; 
+    margin-bottom: 10px;  
+    font-family: sans-serif, Arial; 
+    color: #4b4b4b; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.form-horizontal {
+    background:#CCC; 
+    width:400px;  
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.login p {
+    font-size: 16px; 
+    margin-bottom: 10px; 
+    line-height: 30px; 
+    font-family: sans-serif, Arial; 
+    color: #4b4b4b; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=number]:hover,
+input[type=password]:hover {
+    border-color: #e0e0e0;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=submit] {
+    width: -webkit-fill-available;
+}
+
+.edit p {
+    font-size: 16px; 
+    margin-bottom: 15px; 
+    line-height: 30px; 
+    font-family: sans-serif, Arial; 
+    color: #4b4b4b; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.edit button {
+    margin-left: 643px;
+}
+
+.user_avatar {
+    margin-top: 30px;
+    margin-left: 630px;
+}
+
+.back_main {
+    text-decoration: none;
+    margin: 0 auto;
+    box-shadow: 0 0 black;
+}
+
+.errorlist {
+    list-style-type: none;
+    color: brown;
+    font-size: 10px;
+}
+
+.admin_menu {
+    text-align: center;
+}
+
+.admin_menu li{
+    font-size: 20px;
+    list-style-type: none;
+    display: inline-flex;
+    margin: 20px;
+}
+
+.admin_menu a {
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+.admin_menu a:hover {
+    color: #212121;
+}
+
+.user_avatar{
+    margin-left: 47.5%;
+}
+
+.new_category_form .back_btn {
+    margin: 30px;
+    margin-left: 45%;
+}
+
+.admin_table button {
+    transition-duration: 0.8s;
+    border-radius: 5px;
+    width: 150px;
+    height: 25px;
+}
+
+.new_category_form .back_btn,
+.admin_products_list .admin_new_product,
+.login button,
+.categories_list button,
+.users_list button {
+    transition-duration: 0.8s;
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+}
+
+.summary button,
+.cancel_btn,
+.category_record button,
+.user_role button {
+    transition-duration: 0.8s;
+    border-radius: 5px;
+    width: 30%;
+    height: 25px;
+}
+
+.new_category_form .back_btn:hover,
+.summary button:hover,
+.admin_products_list .admin_new_product:hover,
+.admin_table button:hover,
+.cancel_btn:hover,
+.login button:hover,
+.categories_list button:hover,
+.category_record button:hover,
+.users_list button:hover,
+.user_role button:hover {
+    background-color: #6c6c6c;
+    color: white;
+}
+
+.new_category_form .back_btn a,
+.summary button a,
+.admin_products_list .admin_new_product a,
+.admin_table button a,
+.cancel_btn a,
+.login button a,
+.categories_list button a,
+.category_record button a,
+.users_list button a,
+.user_role button a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
